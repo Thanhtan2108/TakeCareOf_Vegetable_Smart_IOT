@@ -110,8 +110,9 @@ Hệ thống vườn rau thông minh sử dụng ESP32 và FreeRTOS để tự �
 - Xử lý lỗi khi đọc cảm biến
 
 ## 6. Yêu Cầu Phần Mềm
-- Arduino IDE
-- ESP32 Board Support
+- VScode có cài extension PlatformIO
+- Board DOIT DEVKIT V1
+- Framework Arduino
 - Thư viện:
   + FreeRTOS
   + DHT
@@ -123,14 +124,14 @@ Hệ thống vườn rau thông minh sử dụng ESP32 và FreeRTOS để tự �
   + Adafruit_SSD1306
 
 ## 7. Hướng Dẫn Cài Đặt
-1. Cài đặt Arduino IDE và ESP32 Board Support
-2. Cài đặt các thư viện cần thiết
-3. Kết nối phần cứng theo sơ đồ
-4. Cập nhật thông tin WiFi và Blynk
+1. Cài đặt extension PlatformIO trên VScode
+2. Cài đặt các thư viện cần thiết được liệt kê ở mục 6
+3. Kết nối phần cứng theo mô tả chân kết nối ở mục 2
+4. Cập nhật thông tin WiFi gồm SSID và PASS; Blynk gồm BLYNK_TEMPLATE_ID, BLYNK_TEMPLATE_NAME và BLYNK_AUTH_TOKEN
 5. Upload code lên ESP32
 
 ## 8. Lưu Ý
-- Đảm bảo nguồn điện ổn định
+- Đảm bảo nguồn điện ổn định cấp cho ESP32 là 3.3V
+- Các động cơ như quạt, Servo và Bơm dùng nguồn riêng 5V
 - Kiểm tra kết nối cảm biến trước khi vận hành
-- Cập nhật ngưỡng điều khiển phù hợp với loại cây trồng
-- Bảo trì định kỳ các cảm biến và thiết bị 
+- Cập nhật ngưỡng điều khiển phù hợp 
